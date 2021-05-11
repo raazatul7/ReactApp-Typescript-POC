@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [sum, setSum] = useState(0)
+
+  const add = (num1: number, num2: number) => {
+    setSum(num1 + num2)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>{sum}</h1>
+        <button onClick={() => add(1, 2)} />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
