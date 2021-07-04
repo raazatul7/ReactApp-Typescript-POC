@@ -1,34 +1,31 @@
-import React, { useState } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Login from './views/login/login'
+import Signup from "./views/signup/signup"
 
 const App = () => {
-  const [sum, setSum] = useState(0)
-
-  const add = (num1: number, num2: number) => {
-    setSum(num1 + num2)
-  }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>{sum}</h1>
-        <button onClick={() => add(1, 2)} />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="d-flex align-items-center justify-content-center mt-5" style={{ minHeight: "50vh" }}>
+
+      <div className="w-100" style={{ maxWidth: "400px" }}>
+
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Signup} />
+            <Route exact path="/login" component={Login} />
+          </Switch>
+        </Router>
+
+
+      </div>
+
+    </Container >
+
   );
 }
+
 
 export default App;

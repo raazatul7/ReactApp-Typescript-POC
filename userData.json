@@ -1,0 +1,42 @@
+[
+    {
+        "firstName": "Admin",
+        "email": "admin@gmail.com",
+        "phone": "0987654321",
+        "address": "New Delhi",
+        "password": "admin",
+        "role": "admin"
+    },
+    {
+        "firstName": "Atul",
+        "email": "atul@user.com",
+        "phone": "1234567890",
+        "address": "New Delhi",
+        "password": "user",
+        "role": "user"
+    },
+    {
+        "firstName": "Raj",
+        "email": "raj@user.com",
+        "phone": "0987789098",
+        "address": "New Delhi",
+        "password": "user",
+        "role": "user"
+    },
+    {
+        "firstName": "Gupta",
+        "email": "gupta@user.com",
+        "phone": "1234567890",
+        "address": "New Delhi",
+        "password": "user",
+        "role": "user"
+    },
+    {
+        "firstName": "Rahul",
+        "email": "rahul@user.com",
+        "phone": "0987789098",
+        "address": "New Delhi",
+        "password": "user",
+        "role": "user"
+    }
+]
